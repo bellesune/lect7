@@ -1,0 +1,16 @@
+<head>
+    <head>
+        <title>List of Favorite Artists</title>
+        <link rel="stylesheet" href={{ url_for("static", filename="style.css") }} />
+    </head>
+    <body>
+        <!-- <h3>My favorite artists are {{artists[0]}}, {{artists[1]}}, {{artists[2]}}</h3> -->
+        <h1>My favorite artists are:</h1>
+        
+        <ol>
+            {% for i in range(0, length) %} <!-- len(artists) doesnt work -->
+                <li>{{ artists[i] }}<img height=65 width=65 src="{{ artistsPhoto[i] }}"/></li>
+            {% endfor %}
+        </ol>
+    </body>
+</head>
