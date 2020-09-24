@@ -5,9 +5,9 @@
     </head>
     <body>
         
-        <h1>My favorite artist</h1>
-        <img src="./static/ariana.jpg" />
-        
-        
+        <h1>My favorite artist {{ random_number }}</h1>
+        {% for i in range(0, random_number) %} <!-- len(artists) doesnt work -->
+               <img src="./static/ariana.jpg" />
+        {% endfor %}
     </body>
 </head>
