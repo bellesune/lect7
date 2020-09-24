@@ -1,9 +1,6 @@
 body{
-    background-color: blue;
+    background-color: lightpink;
     font: Arial;
+    text-align: center;
 }
 
-ol{ /*li works too*/
-    font-size: 36px;
-    background-color: purple;
-}
