@@ -1,23 +1,19 @@
 import flask
 import os
+import random
 
 app = flask.Flask(__name__)
 
-artists = ["Ariana Grande", "Taylor Swift", "Katy Perry", "Camila Cabello", "Blackpink"]
-artistsPhoto = ["/static/ariana.jpg", "/static/taylor.jpg", "/static/katy.jpg", "/static/camila.jpg", "/static/blackpink.jpg"]
 
 @app.route('/')
 
 def index():
-    #return "Hello World!"
-    
+    num = random.randint(1,20)
+   
     return flask.render_template(
         "index.html",
-        length = len(artists),
-        artists = artists,
-        artistsPhoto = artistsPhoto,
-        length_photo = len(artistsPhoto)
-        )
+        random_number = num
+    )
     
 app.run(
     port = int(os.getenv("PORT", 8080)),   
