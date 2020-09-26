@@ -1,14 +1,15 @@
 <head>
     <head>
-        <title>List of Favorite Artists</title>
+        <title>List of Favorite Artist</title>
         <link rel="stylesheet" href={{ url_for("static", filename="style.css") }} />
     </head>
     <body>
-
+        
         <h1>My favorite artist {{ random_number }}</h1>
+        <h3>Ariana Grande</h3>
         {% for i in range(0, random_number) %} 
                <img width="300px" height="300px" src="./static/ariana.jpg" />
         {% endfor %}
-
+        <h4>End of line</h4>
     </body>
 </head>
