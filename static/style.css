@@ -2,5 +2,7 @@ body{
     background-color: lightpink;
     font: Arial;
     text-align: center;
+    border: solid;
+    border-radius: 15px;
 }
 
